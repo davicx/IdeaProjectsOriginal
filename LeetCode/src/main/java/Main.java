@@ -7,9 +7,63 @@ public class Main {
         //String s =  "abcabcbb";
         String s =  "abcad";
         //System.out.println(lengthOfLongestSubstringForce(s));
-        System.out.println(lengthOfLongestSubstringWhile(s));
+        System.out.println("ANSWER: " + lengthOfLongestSubstring(s));
 
     }
+
+
+
+    public static int lengthOfLongestSubstring(String s) {
+        int longestSubString = 0;
+        int leftPointer = 0;
+        int rightPointer = 0;
+        char c;
+
+        for (rightPointer = 0; rightPointer < s.length(); rightPointer++) {
+            Set<Character> charSet = new HashSet<Character>();
+            c = s.charAt(rightPointer);
+            charSet.add(c);
+            System.out.println(rightPointer +  " " + leftPointer +  " " + c);
+            if(charSet.contains(c)) {
+                System.out.println("Found ");
+                charSet.remove(s.charAt(leftPointer));
+                ++leftPointer;
+            }
+
+            longestSubString = Math.max(longestSubString, rightPointer-leftPointer+1);
+            ++rightPointer;
+
+        }
+        return longestSubString;
+    }
+
+
+/*
+         for (int i = 0; i < s.length(); i++) {
+            Set<Character> uniqueCharSet = new HashSet<Character>();
+            ArrayList<Character> allCharArray = new ArrayList<Character>();
+            for (int j = i; j < s.length(); j++) {
+                char c = s.charAt(j);
+                uniqueCharSet.add(c);
+                allCharArray.add(c);
+
+                //Compare the List and the Set
+                if(uniqueCharSet.size() != allCharArray.size()) {
+                    System.out.println("Not Unique " + allCharArray + " | " + uniqueCharSet);
+                    break;
+                } else {
+                    longestString = Math.max(longestString, uniqueCharSet.size()) ;
+                    System.out.println("Still Unique " + allCharArray);
+                }
+
+            }
+
+            System.out.println();
+        }
+
+ */
+
+
 
     public static int lengthOfLongestSubstringWhile(String s) {
         if(s == null || s.length() == 0) {
