@@ -1,13 +1,31 @@
 package leetcode;
 
+import java.util.ArrayList;
+
 public class longestPalindromSubstring {
     public static void main(String[] args) {
         String s = "abad";
-        System.out.println("ANSWER: " + longestPalindrome(s));
+        //System.out.println("ANSWER: " + longestPalindrome(s));
+        ArrayList<String> friends = new ArrayList<String>();
+        friends.add("bilbo");
+        friends.add("david");
+        friends.add("sam");
+        friends.add("frodo");
+        System.out.println(friends);
+
+
 
     }
 
     public static int longestPalindrome(String s) {
+
+
+        return 1;
+    }
+}
+
+
+        /*
         char currentChar;
         char leftChar;
         char rightChar;
@@ -35,7 +53,7 @@ public class longestPalindromSubstring {
                 System.out.println("OVERFLOW RIGHT ");
             }
 
-            /*
+
             while(outOfBounds == false) {
                 System.out.println("Enter While Loop " + i);
 
@@ -49,13 +67,13 @@ public class longestPalindromSubstring {
                 }
             }
 
-             */
+
             System.out.println();
 
         }
             return longestPalindrome;
 
-
+   */
 
 
 
@@ -97,6 +115,3 @@ public class longestPalindromSubstring {
         }
         */
 
-
-    }
-}
