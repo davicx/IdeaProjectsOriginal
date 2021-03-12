@@ -8,7 +8,7 @@ import java.util.Queue;
 public class priorityQueueMap {
 
     public static void main(String[] args) {
-        priorityQueue();
+        normalQueue();
 
 
 
