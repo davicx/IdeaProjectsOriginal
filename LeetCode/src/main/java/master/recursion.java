@@ -4,17 +4,17 @@ import java.util.ArrayList;
 
 public class recursion {
     public static void main(String[] args) {
-        String s = "abcda";
-        int middle = 2;
+        String s = "abcdcba";
+        int middle = s.length() / 2;
         int leftBoundary = 0;
         int rightBoundary = s.length();
         int step = 1;
         char leftChar;
         char rightChar;
-
+        System.out.println("MIDDLE " + s.charAt(middle));
 
         while(step < 10) {
-            System.out.println(step);
+            //System.out.println(step);
             if(middle - step < leftBoundary || middle + step > rightBoundary) {
                 System.out.println("no luck");
                 break;
