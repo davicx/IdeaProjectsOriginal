@@ -4,6 +4,56 @@ import java.util.ArrayList;
 
 public class recursion {
     public static void main(String[] args) {
+        //String s = "abcdcba";
+        String s = "abc";
+        int l = s.length();
+        int n = 0;
+        //recursionStringOutward(s, l, n);
+
+        //int middle = 4 / 2;
+        //int remainder = 4 % 2;
+
+        int middle = l / 2;
+        int remainder = l % 2;
+
+        System.out.println(middle + " " + remainder + " " + s.charAt(middle));
+
+
+
+
+    }
+
+    public static void recursionStringOutward(String s, int l, int n) {
+        if (n == l) {
+            System.out.println("Done");
+        } else {
+            System.out.println(s.charAt(n));
+            n = n + 1;
+            recursionStringLoop(s, l, n);
+        }
+    }
+
+    public static void recursionStringLoop(String s, int l, int n) {
+        if (n == l) {
+            System.out.println("Done");
+        } else {
+            System.out.println(s.charAt(n));
+            n = n + 1;
+            recursionStringLoop(s, l, n);
+        }
+    }
+
+    public static void sayHi(int n) {
+        if (n == 0) {
+            System.out.println("Done");
+        } else {
+            System.out.println("hi " + n);
+            n = n - 1;
+            sayHi(n);
+        }
+    }
+
+    public static void recursionOutward(int n) {
         String s = "abcdcba";
         int middle = s.length() / 2;
         int leftBoundary = 0;
@@ -53,8 +103,9 @@ public class recursion {
         }
         */
 
-
     }
+
+
 
     public static void simple() {
         String s = "abcba";
@@ -117,14 +168,6 @@ public class recursion {
 
 
 
-    public static void sayHi(int n) {
-        if (n == 0) {
-            System.out.println("Done");
-        } else {
-            System.out.println("hi " + n);
-            n = n - 1;
-            sayHi(n);
-        }
-    }
+
 }
 

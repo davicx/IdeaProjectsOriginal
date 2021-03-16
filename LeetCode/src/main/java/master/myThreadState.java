@@ -3,8 +3,11 @@ package master;
 class MyThreadState extends Thread {
     boolean waiting = true;
     boolean ready = false;
+
     MyThreadState() {
+
     }
+
     public void run() {
         String thrdName = Thread.currentThread().getName();
         System.out.println(thrdName + " starting.");
