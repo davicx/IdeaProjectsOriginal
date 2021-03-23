@@ -1,4 +1,4 @@
-package master;
+package learning;
 
 class MyThreadState extends Thread {
     boolean waiting = true;

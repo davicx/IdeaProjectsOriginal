@@ -1,4 +1,4 @@
-package master;
+package learning;
 
 import java.util.ArrayList;
 
@@ -8,22 +8,20 @@ public class recursion {
         String s = "abc";
         int l = s.length();
         int n = 0;
-        //recursionStringOutward(s, l, n);
+        recursionStringRight(s, l, n);
 
         //int middle = 4 / 2;
         //int remainder = 4 % 2;
 
-        int middle = l / 2;
-        int remainder = l % 2;
+        //int middle = l / 2;
+        //int remainder = l % 2;
 
-        System.out.println(middle + " " + remainder + " " + s.charAt(middle));
-
-
+        //System.out.println(middle + " " + remainder + " " + s.charAt(middle));
 
 
     }
 
-    public static void recursionStringOutward(String s, int l, int n) {
+    public static void recursionStringRight(String s, int l, int n) {
         if (n == l) {
             System.out.println("Done");
         } else {

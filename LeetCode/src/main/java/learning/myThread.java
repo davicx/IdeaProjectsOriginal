@@ -1,4 +1,4 @@
-package master;
+package learning;
 
 public class myThread implements Runnable {
     private volatile int myNumber = 0;

@@ -1,4 +1,4 @@
-package master;
+package learning;
 
 public class learningThreads {
     public static void main(String[] args) {

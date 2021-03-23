@@ -1,4 +1,4 @@
-package master;
+package learning;
 
 import java.util.LinkedList;
 import java.util.PriorityQueue;
