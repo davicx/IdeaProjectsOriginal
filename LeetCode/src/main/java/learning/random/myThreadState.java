@@ -1,4 +1,4 @@
-package learning;
+package learning.random;
 
 class MyThreadState extends Thread {
     boolean waiting = true;

@@ -1,4 +1,4 @@
-package learning;
+package learning.random;
 
 import java.util.ArrayList;
 

@@ -1,4 +1,4 @@
-package learning;
+package learning.random;
 
 public class learningThreads {
     public static void main(String[] args) {

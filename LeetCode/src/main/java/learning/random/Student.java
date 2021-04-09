@@ -1,4 +1,4 @@
-package learning;
+package learning.random;
 public class Student implements Comparable<Student> {
     private int id;
     private String name;
